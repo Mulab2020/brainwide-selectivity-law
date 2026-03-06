@@ -1,0 +1,24 @@
+# byte-compiled
+__pycache__/
+*.py[codz]
+*$py.class
+
+# notebook
+.ipynb_checkpoints
+dev_*.ipynb
+
+.vscode/
+
+.bak/
+.tmp/
+
+betabin-gated-vae/datasets/
+# betabin-gated-vae/outputs/
+
+visual-stimuli/data/*
+!visual-stimuli/data/naturalistic_patches/
+visual-stimuli/data/naturalistic_patches/*
+!visual-stimuli/data/naturalistic_patches/manifest.csv
+!visual-stimuli/data/naturalistic_patches/src
+visual-stimuli/data/naturalistic_patches/src/*
+!visual-stimuli/data/naturalistic_patches/src/Measurement20.png

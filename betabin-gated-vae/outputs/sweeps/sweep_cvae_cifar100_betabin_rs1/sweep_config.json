@@ -1,0 +1,35 @@
+{
+    "random_seed": 1,
+    "is_control": false,
+    "out_dir": "outputs/sweeps/sweep_cvae_cifar100_betabin_rs1",
+    "model_cfg_path": "outputs\\sweeps\\sweep_cvae_cifar100_betabin_rs1\\model_config.json",
+    "dataset_dir": "datasets/",
+    "range_alpha": [
+        0.0,
+        10.35
+    ],
+    "range_beta": [
+        0.0,
+        10.35
+    ],
+    "n_nodes": [
+        23,
+        23
+    ],
+    "train": {
+        "batch_size": 1000,
+        "lr": 0.001,
+        "n_epochs": 500,
+        "eval_every_n_epochs": 40,
+        "save_every_n_epochs": 50,
+        "num_workers_train": 4,
+        "num_workers_val": 4
+    },
+    "fid_eval": {
+        "batch_size": 1000,
+        "inception_dims": 2048,
+        "samples_per_class": 100,
+        "num_workers": 4
+    },
+    "device": "cuda"
+}

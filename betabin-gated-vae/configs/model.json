@@ -1,0 +1,16 @@
+{
+    "vae": {
+        "latent_dim": 1000,
+        "conditional": true,
+        "n_classes": 100
+    },
+
+    "convnet": {
+        "img_size": [32, 32],
+        "channels": [3, 32, 64, 128],
+        "kernel_sizes": [4, 4, 4],
+        "strides": [2, 2, 2],
+        "activation": "silu",
+        "final_activation": "sigmoid"
+    }
+}
