@@ -1,6 +1,13 @@
 """
 Accelerated version for https://github.com/mseitzer/pytorch-fid
 Wrapped as a context manager.
+
+Function `get_activations` was adapted from pytorch-fid,
+which was originally liscenced under Apache Liscence 2.0.
+
+Modifications:
+- Implemented torch-only FID computation instead of scipy
+- Added batch support
 """
 
 __all__ = ['FIDEvaluator']

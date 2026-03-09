@@ -122,3 +122,7 @@ pip install -r visual-stimuli/requirements.txt
 ```
 
 Please refer to the [notebook](./visual-stimuli/naturalistic_patches.ipynb) for details about how we generated the naturalistic patch stimuli from [Hyperspectral natural imaging](https://zenodo.org/communities/hyperspectral-natural-imaging) data collected by Zimmermann et al.
+
+## License
+
+This project is licensed under the MIT License. Parts of the implementation in [fid.py](./betabin-gated-vae/src/evaluation/fid.py) are adapted from pytorch-fid (Apache License 2.0).
