@@ -1,0 +1,32 @@
+{
+    "random_seed": 0,
+    "is_control": false,
+    
+    "out_dir": "outputs/sweep/tiny",
+    "model_cfg_path": "configs/model.json",
+    "dataset_dir": "datasets/",
+
+    "range_alpha": [0.0, 2],
+    "range_beta": [0.0, 2],
+    "n_nodes": [2, 2],
+
+    "train": {
+        "batch_size": 64,
+        "lr": 1e-3,
+        "n_epochs": 1,
+        "eval_every_n_epochs": 40,
+        "save_every_n_epochs": 50,
+
+        "num_workers_train": 4,
+        "num_workers_val": 4
+    },
+
+    "fid_eval": {
+        "batch_size": 64,
+        "inception_dims": 2048,
+        "samples_per_class": 100,
+        "num_workers": 4
+    },
+    
+    "device": "cuda"
+}

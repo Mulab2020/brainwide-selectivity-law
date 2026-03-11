@@ -12,7 +12,11 @@ The code provided here contains:
 
 > [!Note]
 >
-> To run this part, please ensure that you are under the directory `betabin-gated-vae/`.
+> To run this part, please make sure you are in the `betabin-gated-vae/` directory, not the repository root.
+>
+> ```bash
+> cd betabin-gated-vae
+> ```
 
 ### Prepare environment
 
@@ -53,6 +57,8 @@ Two JSON files are used for configure a sweep session:
 - **Model configuration** (example given as `configs/model.json`) specifies a customized Response-Gated-VAE structure;
 - **Sweep configuration** (example given as `configs/sweep.json`) specifies the parameters of a experiment run.
 
+Sweep configuration for a tiny run is provided as `configs/sweep_dummy.json`. It sweeps only four parameter combinations and trains each model for a single epoch, allowing you to quickly verify that the pipeline runs correctly.
+
 You might edit the following entries in the **sweep configuration** to run an experiment on your computer:
 
 - `out_dir`: Path to the directory to store the outputs for this experiment run.
@@ -64,7 +70,7 @@ You might edit the following entries in the **sweep configuration** to run an ex
 
 ##### 2. Train models
 
-Run the following command to train the models:
+Run the following command to train the models (for a quick sanity check, you can replace `<path_to_sweep_config.json>` with `configs/sweep_dummy.json`, which runs a tiny experiment):
 
 ```bash
 python train_gated_vaes_param_sweep.py -p <path_to_sweep_config.json>
